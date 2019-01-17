@@ -2,7 +2,7 @@
 
 App updater for Cordova/PhoneGap
 
-本插件在 `cordova-plugin-app-update` 上修改的，主要改了修改了提示框，并在提示框中加入了更新详情。
+本插件在 `cordova-plugin-app-update` 的基础上修改的，主要改了修改了提示框，并在提示框中加入了更新详情。
 
 :tada:
 
