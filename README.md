@@ -5,6 +5,7 @@ App updater for Cordova/PhoneGap
 
 # Demo
 Try it yourself:
+
 Just clone and install this demo. [cordova-plugin-app-update-DEMO](https://github.com/vaenow/cordova-plugin-app-update-demo) :tada:
 
  * 如果喜欢它，请别忘了给我一颗鼓励的星
