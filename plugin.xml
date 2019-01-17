@@ -12,7 +12,7 @@
     <platform name="android">
         <config-file parent="/*" target="res/xml/config.xml">
             <feature name="AppUpdate">
-                <param name="android-package" value="com.vaenow.appupdate.android.CheckAppUpdate"/>
+                <param name="android-package" value="org.apache.cordova.appupdate.CheckAppUpdate"/>
                 <param name="onload" value="true" />  <!-- Must Have -->
             </feature>
         </config-file>
@@ -37,23 +37,26 @@
             </provider>
         </config-file>
 
-        <source-file src="src/android/AuthenticationOptions.java" target-dir="src/com/vaenow/appupdate/android"/>
-        <source-file src="src/android/CheckAppUpdate.java" target-dir="src/com/vaenow/appupdate/android"/>
-        <source-file src="src/android/CheckUpdateThread.java" target-dir="src/com/vaenow/appupdate/android"/>
-        <source-file src="src/android/Constants.java" target-dir="src/com/vaenow/appupdate/android"/>
-        <source-file src="src/android/DownloadApkThread.java" target-dir="src/com/vaenow/appupdate/android"/>
-        <source-file src="src/android/DownloadHandler.java" target-dir="src/com/vaenow/appupdate/android"/>
-        <source-file src="src/android/GenericFileProvider.java" target-dir="src/com/vaenow/appupdate/android"/>
-        <source-file src="src/android/GetRemoteXmlThread.java" target-dir="src/com/vaenow/appupdate/android"/>
-        <source-file src="src/android/MsgBox.java" target-dir="src/com/vaenow/appupdate/android"/>
-        <source-file src="src/android/MsgHelper.java" target-dir="src/com/vaenow/appupdate/android"/>
-        <source-file src="src/android/ParseXmlService.java" target-dir="src/com/vaenow/appupdate/android"/>
-        <source-file src="src/android/UIValues.java" target-dir="src/com/vaenow/appupdate/android"/>
-        <source-file src="src/android/UpdateManager.java" target-dir="src/com/vaenow/appupdate/android"/>
-        <source-file src="src/android/Utils.java" target-dir="src/com/vaenow/appupdate/android"/>
-        <source-file src="src/android/Version.java" target-dir="src/com/vaenow/appupdate/android"/>
+        <source-file src="src/android/AuthenticationOptions.java" target-dir="src/org/apache/cordova/appupdate"/>
+        <source-file src="src/android/CheckAppUpdate.java" target-dir="src/org/apache/cordova/appupdate"/>
+        <source-file src="src/android/CheckUpdateThread.java" target-dir="src/org/apache/cordova/appupdate"/>
+        <source-file src="src/android/Constants.java" target-dir="src/org/apache/cordova/appupdate"/>
+        <source-file src="src/android/DownloadApkThread.java" target-dir="src/org/apache/cordova/appupdate"/>
+        <source-file src="src/android/DownloadHandler.java" target-dir="src/org/apache/cordova/appupdate"/>
+        <source-file src="src/android/GenericFileProvider.java" target-dir="src/org/apache/cordova/appupdate"/>
+        <source-file src="src/android/GetRemoteXmlThread.java" target-dir="src/org/apache/cordova/appupdate"/>
+        <source-file src="src/android/MsgBox.java" target-dir="src/org/apache/cordova/appupdate"/>
+        <source-file src="src/android/MsgHelper.java" target-dir="src/org/apache/cordova/appupdate"/>
+        <source-file src="src/android/ParseXmlService.java" target-dir="src/org/apache/cordova/appupdate"/>
+        <source-file src="src/android/UIValues.java" target-dir="src/org/apache/cordova/appupdate"/>
+        <source-file src="src/android/UpdateDialog.java" target-dir="src/org/apache/cordova/appupdate"/>
+        <source-file src="src/android/UpdateManager.java" target-dir="src/org/apache/cordova/appupdate"/>
+        <source-file src="src/android/Utils.java" target-dir="src/org/apache/cordova/appupdate"/>
+        <source-file src="src/android/Version.java" target-dir="src/org/apache/cordova/appupdate"/>
 
         <source-file src="res/values/appupdate_strings.xml" target-dir="res/values"/>
+        <source-file src="res/values/dialog_style.xml" target-dir="res/values"/>
+
         <source-file src="res/values-en/appupdate_strings.xml" target-dir="res/values-en"/>
         <source-file src="res/values-es/appupdate_strings.xml" target-dir="res/values-es"/>
         <source-file src="res/values-de/appupdate_strings.xml" target-dir="res/values-de"/>
@@ -65,8 +68,21 @@
         <source-file src="res/values-pl/appupdate_strings.xml" target-dir="res/values-pl"/>
         <source-file src="res/values-it/appupdate_strings.xml" target-dir="res/values-it"/>
         <source-file src="res/values-ko/appupdate_strings.xml" target-dir="res/values-ko"/>
+
+        <source-file src="res/layout/layout_dialog_update.xml" target-dir="res/layout"/>
         <source-file src="res/layout/appupdate_progress.xml" target-dir="res/layout"/>
-        <source-file src="res/xml/appupdate_paths.xml" target-dir="res/xml" />
+
+        <source-file src="res/xml/appupdate_paths.xml" target-dir="res/xml"/>
+
+        <source-file src="res/anim/bottom_menu_enter.xml" target-dir="res/anim"/>
+        <source-file src="res/anim/bottom_menu_exit.xml" target-dir="res/anim"/>
+        <source-file src="res/anim/push_bottom_in.xml" target-dir="res/anim"/>
+        <source-file src="res/anim/push_bottom_out.xml" target-dir="res/anim"/>
+
+        <source-file src="res/drawable/update_version_but_bg.xml" target-dir="res/drawable"/>
+        <source-file src="res/drawable/upgrade_dialog_bg.xml" target-dir="res/drawable"/>
+
+        <source-file src="res/mipmap-xxhdpi/upgrade_dialog_bg.png" target-dir="res/mipmap-xxhdpi"/>
         
         <framework src="com.android.support:support-v4:24.1.1+" />
     </platform>
