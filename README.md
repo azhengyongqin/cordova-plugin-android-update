@@ -1,22 +1,14 @@
+# **cordova-plugin-android-update**
 
-
-![travis](https://travis-ci.org/vaenow/cordova-plugin-app-update.svg?branch=master)  
-
-[![NPM](https://nodei.co/npm/cordova-plugin-app-update.png?downloads=true&downloadRank=true)](https://nodei.co/npm/cordova-plugin-app-update/)
-
-# cordova-plugin-app-update
 App updater for Cordova/PhoneGap
 
-# Demo 
-Try it yourself:
+本插件在 `cordova-plugin-app-update` 上修改的，主要改了修改了提示框，并在提示框中加入了更新详情。
 
-Just clone and install this demo.
-[cordova-plugin-app-update-DEMO](https://github.com/vaenow/cordova-plugin-app-update-demo)
 :tada:
 
  * 如果喜欢它，请别忘了给我一颗鼓励的星
  * Support me a `Star` if it is necessary.  :+1:
- 
+
 # Preview
 ![enter image description here](https://raw.githubusercontent.com/vaenow/cordova-plugin-app-update/master/res/img/Screenshot_2015-10-31-13-42-13.jpg)
 
@@ -30,7 +22,7 @@ Just clone and install this demo.
 
 > `"cordova-android": "6.3.0"`
 
-`cordova plugin add cordova-plugin-app-update --save`
+`cordova plugin add https://github.com/azhengyongqin/cordova-plugin-android-update --save`
 
 # Usage
 
@@ -82,14 +74,17 @@ versionName | versionCode
 12.234.221  | 1436218
 
 ### server version.xml file
- 
+
 ```xml
 <update>
-    <version>302048</version>
-    <name>name</name>
-    <url>http://192.168.0.1/android.apk</url>
+    <version>10200</version>
+    <name>1.2.0</name>
+    <remark>1.加入自动升级功能\n2.修复了一些bug\n3.不用扫描下载了</remark>
+    <url>http://http://192.168.0.1/android.ap</url>
 </update>
 ```
+
+在原插件配置文件中加入了 `<remark></remark>` 标签，来配置更新内容提示。
 
 ### `checkAppUpdate` code
 
