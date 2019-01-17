@@ -1,0 +1,66 @@
+{
+  "_from": "cordova-plugin-app-update",
+  "_id": "cordova-plugin-app-update@2.0.2",
+  "_inBundle": false,
+  "_integrity": "sha512-JQLTdkFZ9nViV0WS7VD4WYKPj7WItDhxj/cwHW28+T1enYuISBKjMW6wm+X9wNd40oOY58KrH040sv0fIPvUTA==",
+  "_location": "/cordova-plugin-app-update",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "tag",
+    "registry": true,
+    "raw": "cordova-plugin-app-update",
+    "name": "cordova-plugin-app-update",
+    "escapedName": "cordova-plugin-app-update",
+    "rawSpec": "",
+    "saveSpec": null,
+    "fetchSpec": "latest"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "https://registry.npmjs.org/cordova-plugin-app-update/-/cordova-plugin-app-update-2.0.2.tgz",
+  "_shasum": "9a1ed9c890273901601f63c7d1ef572697c7e981",
+  "_spec": "cordova-plugin-app-update",
+  "_where": "E:\\Android\\lineme-app",
+  "author": {
+    "name": "vaenow"
+  },
+  "bugs": {
+    "url": "https://github.com/vaenow/cordova-plugin-app-update/issues"
+  },
+  "bundleDependencies": false,
+  "cordova": {
+    "id": "cordova-plugin-app-update",
+    "platforms": [
+      "android"
+    ]
+  },
+  "deprecated": false,
+  "description": "Cordova App Update",
+  "devDependencies": {
+    "jshint": "^2.6.0"
+  },
+  "homepage": "https://github.com/vaenow/cordova-plugin-app-update#readme",
+  "keywords": [
+    "cordova",
+    "app",
+    "auto",
+    "update",
+    "updater",
+    "dynamic",
+    "ecosystem:cordova",
+    "cordova-android"
+  ],
+  "license": "MIT",
+  "name": "cordova-plugin-app-update",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vaenow/cordova-plugin-app-update.git"
+  },
+  "scripts": {
+    "jshint": "node node_modules/jshint/bin/jshint www && node node_modules/jshint/bin/jshint src && node node_modules/jshint/bin/jshint tests",
+    "test": "npm run jshint"
+  },
+  "version": "2.0.2"
+}
