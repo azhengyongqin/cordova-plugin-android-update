@@ -8,10 +8,6 @@ import android.content.res.Resources;
 public class MsgHelper {
   private String packageName;
   private Resources resources;
-
-  public static String UPDATE_TITLE = "update_title";
-  public static String UPDATE_MESSAGE = "update_message";
-  public static String UPDATE_UPDATE_BTN = "update_update_btn";
   public static String APPUPDATE_PROGRESS = "appupdate_progress";
   public static String UPDATE_PROGRESS = "update_progress";
   public static String UPDATING = "updating";
@@ -22,6 +18,13 @@ public class MsgHelper {
   public static String UPDATE_ERROR_TITLE = "update_error_title";
   public static String UPDATE_ERROR_MESSAGE = "update_error_message";
   public static String UPDATE_ERROR_YES_BTN = "update_error_yes_btn";
+
+  public static String LAYOUT_DIALOG_UPDATE = "layout_dialog_update";
+  public static String TV_VERSION_CODE = "tv_version_code";
+  public static String TV_REMARK = "tv_remark";
+  public static String BTN_DIALOG_UPDATE = "btn_dialog_update";
+  public static String STYLE_MY_DIALOG = "MyDialog";
+  public static String STYLE_BOTTOM_MENU_ANIMATIOn = "bottom_menu_animation";
 
 
   MsgHelper(String packageName, Resources resources) {
@@ -40,4 +43,6 @@ public class MsgHelper {
   public int getLayout(String name) {
     return resources.getIdentifier(name, "layout", packageName);
   }
+
+  public int getStyle(String name) { return resources.getIdentifier(name, "style", packageName); }
 }

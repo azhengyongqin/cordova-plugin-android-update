@@ -11,9 +11,6 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.widget.ProgressBar;
 import android.widget.TextView;
-
-import com.lineme.ops.R;
-
 import org.apache.cordova.LOG;
 
 import java.util.HashMap;
@@ -23,7 +20,7 @@ import java.util.Map;
  * Created by LuoWen on 2016/1/20.
  */
 public class MsgBox {
-  public static final String TAG = "MsgBox";
+  private static final String TAG = "MsgBox";
   private Context mContext;
   private MsgHelper msgHelper;
 
@@ -32,7 +29,7 @@ public class MsgBox {
   private ProgressBar downloadDialogProgress;
   private Dialog errorDialog;
 
-  public MsgBox(Context mContext) {
+  MsgBox(Context mContext) {
     this.mContext = mContext;
     this.msgHelper = new MsgHelper(mContext.getPackageName(), mContext.getResources());
   }
@@ -46,12 +43,16 @@ public class MsgBox {
   public Dialog showNoticeDialog(UpdateDialog.OnCenterItemClickListener onClickListener, Version version) {
     if (noticeDialog == null) {
       LOG.d(TAG, "showNoticeDialog");
-      this.noticeDialog = new UpdateDialog(this.mContext, R.layout.dialog_update, new int[]{R.id.dialog_update});
+      this.noticeDialog = new UpdateDialog(this.mContext,
+        msgHelper.getLayout(MsgHelper.LAYOUT_DIALOG_UPDATE),
+        new int []{msgHelper.getStyle(MsgHelper.STYLE_MY_DIALOG),msgHelper.getStyle(MsgHelper.STYLE_BOTTOM_MENU_ANIMATIOn)},
+        new int[]{msgHelper.getId(MsgHelper.BTN_DIALOG_UPDATE)});
+
       this.noticeDialog.setOnCenterItemClickListener(onClickListener);
     }
     this.noticeDialog.show();
-    TextView tvCode = this.noticeDialog.findViewById(R.id.tv_version_code);
-    TextView tvRemark = this.noticeDialog.findViewById(R.id.tv_remark);
+    TextView tvCode = this.noticeDialog.findViewById(msgHelper.getId(MsgHelper.TV_VERSION_CODE));
+    TextView tvRemark = this.noticeDialog.findViewById(msgHelper.getId(MsgHelper.TV_REMARK));
     tvCode.setText("是否升级到新版本："+version.getRemoteName());
     tvRemark.setText(version.getRemoteRemark());
 

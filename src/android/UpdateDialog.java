@@ -10,7 +10,7 @@ import android.view.View;
 import android.view.Window;
 import android.view.WindowManager;
 
-import com.lineme.ops.R;
+
 
 /**
  * @author: zhengliang
@@ -22,6 +22,7 @@ public class UpdateDialog extends Dialog implements View.OnClickListener {
   private Context context;
 
   private int layoutResID;
+  private int[] styleResIDs;
 
   /**
    * 要监听的控件id
@@ -30,11 +31,14 @@ public class UpdateDialog extends Dialog implements View.OnClickListener {
 
   private OnCenterItemClickListener listener;
 
-  UpdateDialog(Context context, int layoutResID, int[] listenedItems) {
-    super(context, R.style.MyDialog);
+
+  UpdateDialog(Context context, int layoutResID,int[] styleResIDs, int[] listenedItems) {
+    super(context, styleResIDs[0]);
+    this.styleResIDs = styleResIDs;
     this.context = context;
     this.layoutResID = layoutResID;
     this.listenedItems = listenedItems;
+
   }
 
   @Override
@@ -50,11 +54,11 @@ public class UpdateDialog extends Dialog implements View.OnClickListener {
       windowManager.getDefaultDisplay().getMetrics(dm);
       WindowManager.LayoutParams lp = getWindow().getAttributes();
       // 设置dialog宽度为屏幕的4/5
-      lp.width = (int) (dm.widthPixels);
+      lp.width = dm.widthPixels;
       window.setAttributes(lp);
       window.setGravity(Gravity.CENTER);
       // 添加动画效果
-      window.setWindowAnimations(R.style.bottom_menu_animation);
+      window.setWindowAnimations(this.styleResIDs[1]);
 
       // 点击Dialog外部消失
       setCanceledOnTouchOutside(true);
