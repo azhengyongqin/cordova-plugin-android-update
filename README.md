@@ -10,11 +10,11 @@ App updater for Cordova/PhoneGap
  * Support me a `Star` if it is necessary.  :+1:
 
 # Preview
-![enter image description here](https://raw.githubusercontent.com/vaenow/cordova-plugin-app-update/master/res/img/Screenshot_2015-10-31-13-42-13.jpg)
+![enter image description here](https://github.com/azhengyongqin/cordova-plugin-android-update/blob/master/res/img/Snipaste_2019-01-17_09-50-00.png)
 
 # 
 
-![enter image description here](https://raw.githubusercontent.com/vaenow/cordova-plugin-app-update/master/res/img/Screenshot_2015-10-31-13-42-19.jpg)
+![enter image description here](https://github.com/azhengyongqin/cordova-plugin-android-update/blob/master/res/img/Snipaste_2019-01-17_09-50-00.png)
 
 # Install
 
