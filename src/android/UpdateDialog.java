@@ -1,4 +1,4 @@
-package com.vaenow.appupdate.android;
+package org.apache.cordova.appupdate;
 
 import android.app.Activity;
 import android.app.Dialog;
@@ -9,7 +9,6 @@ import android.view.Gravity;
 import android.view.View;
 import android.view.Window;
 import android.view.WindowManager;
-
 
 
 /**
@@ -32,7 +31,7 @@ public class UpdateDialog extends Dialog implements View.OnClickListener {
   private OnCenterItemClickListener listener;
 
 
-  UpdateDialog(Context context, int layoutResID,int[] styleResIDs, int[] listenedItems) {
+  UpdateDialog(Context context, int layoutResID, int[] styleResIDs, int[] listenedItems) {
     super(context, styleResIDs[0]);
     this.styleResIDs = styleResIDs;
     this.context = context;

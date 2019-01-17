@@ -1,6 +1,5 @@
-package com.vaenow.appupdate.android;
+package org.apache.cordova.appupdate;
 
-import android.AuthenticationOptions;
 import android.content.Context;
 import android.content.pm.PackageManager.NameNotFoundException;
 import android.os.Handler;
@@ -126,6 +125,6 @@ public class CheckUpdateThread implements Runnable {
       remoteName = getMHashMap().get("name");
       remoteRemark = getMHashMap().get("remark");
     }
-    return new Version(localCode,remoteCode,remoteName,remoteRemark);
+    return new Version(localCode, remoteCode, remoteName, remoteRemark);
   }
 }

@@ -1,4 +1,4 @@
-package com.vaenow.appupdate.android;
+package org.apache.cordova.appupdate;
 
 /**
  * Created by LuoWen on 2015/12/14.

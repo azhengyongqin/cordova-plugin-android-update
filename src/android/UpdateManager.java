@@ -1,4 +1,4 @@
-package com.vaenow.appupdate.android;
+package org.apache.cordova.appupdate;
 
 import android.annotation.SuppressLint;
 import android.app.AlertDialog;
@@ -177,7 +177,7 @@ public class UpdateManager {
           mHandler.sendEmptyMessage(Constants.DOWNLOAD_CLICK_START);
         } else {
           // 显示提示对话框,询问更新
-          msgBox.showNoticeDialog(noticeDialogOnClick,version);
+          msgBox.showNoticeDialog(noticeDialogOnClick, version);
           mHandler.sendEmptyMessage(Constants.VERSION_NEED_UPDATE);
         }
       }

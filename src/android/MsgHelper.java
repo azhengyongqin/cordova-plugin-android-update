@@ -1,4 +1,4 @@
-package com.vaenow.appupdate.android;
+package org.apache.cordova.appupdate;
 
 import android.content.res.Resources;
 
@@ -44,5 +44,7 @@ public class MsgHelper {
     return resources.getIdentifier(name, "layout", packageName);
   }
 
-  public int getStyle(String name) { return resources.getIdentifier(name, "style", packageName); }
+  public int getStyle(String name) {
+    return resources.getIdentifier(name, "style", packageName);
+  }
 }

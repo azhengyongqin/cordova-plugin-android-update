@@ -1,4 +1,4 @@
-package com.vaenow.appupdate.android;
+package org.apache.cordova.appupdate;
 
 import android.Manifest;
 import android.content.Intent;

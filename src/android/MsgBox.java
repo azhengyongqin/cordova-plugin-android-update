@@ -1,5 +1,4 @@
-package com.vaenow.appupdate.android;
-
+package org.apache.cordova.appupdate;
 import android.annotation.SuppressLint;
 import android.app.AlertDialog;
 import android.app.AlertDialog.Builder;

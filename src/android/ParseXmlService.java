@@ -1,4 +1,4 @@
-package com.vaenow.appupdate.android;
+package org.apache.cordova.appupdate;
 
 import org.w3c.dom.Document;
 import org.w3c.dom.Element;
@@ -47,7 +47,7 @@ public class ParseXmlService {
         }
         //更新内容
         else if (("remark".equals(childElement.getNodeName()))) {
-          String remark = childElement.getFirstChild().getNodeValue().replace("\\n","\n");
+          String remark = childElement.getFirstChild().getNodeValue().replace("\\n", "\n");
           hashMap.put("remark", remark);
         }
       }

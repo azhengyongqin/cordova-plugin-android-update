@@ -1,4 +1,4 @@
-package com.vaenow.appupdate.android;
+package org.apache.cordova.appupdate;
 
 import org.json.JSONException;
 import org.json.JSONObject;
@@ -8,16 +8,16 @@ import org.json.JSONObject;
  */
 public class Utils {
 
-    static JSONObject makeJSON(int code, Object msg) {
-        JSONObject json = new JSONObject();
+  static JSONObject makeJSON(int code, Object msg) {
+    JSONObject json = new JSONObject();
 
-        try {
-            json.put("code", code);
-            json.put("msg", msg);
-        } catch (JSONException e) {
-            e.printStackTrace();
-        }
-
-        return json;
+    try {
+      json.put("code", code);
+      json.put("msg", msg);
+    } catch (JSONException e) {
+      e.printStackTrace();
     }
+
+    return json;
+  }
 }
