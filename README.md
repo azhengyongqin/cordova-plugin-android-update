@@ -14,7 +14,7 @@ App updater for Cordova/PhoneGap
 
 # 
 
-![enter image description here](https://github.com/azhengyongqin/cordova-plugin-android-update/blob/master/res/img/Snipaste_2019-01-17_09-50-00.png)
+![enter image description here](https://github.com/azhengyongqin/cordova-plugin-android-update/blob/master/res/img/Snipaste_2019-01-17_09-47-54.png)
 
 # Install
 
