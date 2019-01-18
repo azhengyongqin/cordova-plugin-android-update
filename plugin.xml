@@ -27,7 +27,7 @@
 
         <config-file target="AndroidManifest.xml" parent="/manifest/application">
              <provider
-                android:name="com.vaenow.appupdate.android.GenericFileProvider"
+                android:name="org.apache.cordova.appupdate.GenericFileProvider"
                 android:authorities="${applicationId}.appupdate.provider"
                 android:exported="false"
                 android:grantUriPermissions="true">
