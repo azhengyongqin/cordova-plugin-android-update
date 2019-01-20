@@ -12,11 +12,11 @@ Just clone and install this demo. [cordova-plugin-app-update-DEMO](https://githu
  * Support me a `Star` if it is necessary.  :+1:
 
 # Preview
-![enter image description here](https://github.com/azhengyongqin/cordova-plugin-android-update/blob/master/res/img/Snipaste_2019-01-17_09-50-00.png)
+![enter image description here](https://github.com/azhengyongqin/cordova-plugin-android-update/blob/master/res/img/preview1.png)
 
 # 
 
-![enter image description here](https://github.com/azhengyongqin/cordova-plugin-android-update/blob/master/res/img/Snipaste_2019-01-17_09-47-54.png)
+![enter image description here](https://github.com/azhengyongqin/cordova-plugin-android-update/blob/master/res/img/preview2.png)
 
 # Install
 
