@@ -1,7 +1,13 @@
-# cordova-plugin-android-update
+> 文章版权声明：https://blog.csdn.net/qq_23179075/article/details/86581672
+
+# [cordova-plugin-android-update](https://github.com/azhengyongqin/cordova-plugin-android-update)
 
 App updater for Cordova/PhoneGap
-本插件在 `cordova-plugin-app-update` 的基础上修改的，主要改了修改了提示框，并在提示框中加入了更新详情。
+
+本插件在[ cordova-plugin-app-update](https://github.com/vaenow/cordova-plugin-app-update) 的基础上修改的，主要修改内容：
+> 1. 修改了更新提示框样式（网易云音乐APP样式）
+> 2. 提示框中加入了更新详情。
+> 3. 在原插件配置文件中加入了 `<remark></remark>` 标签，来配置更新内容提示。
 
 # Demo
 Try it yourself:
@@ -12,11 +18,11 @@ Just clone and install this demo. [cordova-plugin-app-update-DEMO](https://githu
  * Support me a `Star` if it is necessary.  :+1:
 
 # Preview
-![enter image description here](https://github.com/azhengyongqin/cordova-plugin-android-update/blob/master/res/img/preview1.png)
+![在这里插入图片描述](https://img-blog.csdnimg.cn/20190121181415373.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzIzMTc5MDc1,size_16,color_FFFFFF,t_70)
 
 # 
 
-![enter image description here](https://github.com/azhengyongqin/cordova-plugin-android-update/blob/master/res/img/preview2.png)
+![在这里插入图片描述](https://img-blog.csdnimg.cn/2019012118143088.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzIzMTc5MDc1,size_16,color_FFFFFF,t_70)
 
 # Install
 
@@ -147,5 +153,5 @@ MIT
 # :snowflake: :beers:
 
 * Please let me know if you have any questions.
-
+* [cordova-plugin-android-update](https://github.com/azhengyongqin/cordova-plugin-android-update)
 
